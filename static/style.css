@@ -1,0 +1,155 @@
+/* Estilos para o vídeo de fundo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Coloca o vídeo atrás dos outros elementos */
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche toda a tela com o vídeo */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #356421; /* Verde escuro */
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #137634; /* Mesmo tom do cabeçalho */
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #ffffff; /* Texto em branco */
+    margin-top: 20px;
+}
+
+/* Estilo do título principal */
+h1 {
+    text-align: center;
+    color: #205e19; /* Verde escuro */
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+/* Estilos gerais para o formulário */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(240, 249, 244, 0.95); /* Fundo claro e semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    font-size: 1.1em;
+    margin: 8px 0 4px;
+    text-align: left;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para o botão */
+button {
+    background-color: #2a9d38; /* Verde para o botão */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000; /* Preto para destaque */
+}
+
+/* Estilos para os resultados e dicas */
+.result, .tips {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f0f9f4;
+    border-left: 5px solid #289531; /* Verde mais escuro para contraste */
+    color: #333;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.result h3, .tips h3 {
+    color: #205e19; /* Cor para os títulos dentro dos resultados e dicas */
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.result p, .tips p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Ajustes para melhorar a visualização em telas menores */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .result, .tips {
+        font-size: 0.9em;
+    }
+}

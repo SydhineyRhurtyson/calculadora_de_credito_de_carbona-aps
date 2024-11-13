@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Carbono</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a>Ferramenta de cálculo de emissões de Gases do Efeito Estufa (GEE) - calcule sua pegada de carbono!</a></li>
+                <li><a href="/como-funciona">Sobre a calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Vídeo como fundo -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="/static/videos/148042-793525159_tiny.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Calculadora de Emissões de Carbono</h1>
+        <form id="carbonForm">
+            <label>Distância média percorrida por mês (km):</label>
+            <input type="number" id="distanciaKm" required><br>
+            
+            <label>Tipo de transporte:</label>
+            <select id="tipoTransporte">
+                <option value="carro">Carro</option>
+                <option value="moto">Moto</option>
+                <option value="onibus">Ônibus</option>
+                <option value="bicicleta">Bicicleta</option>
+                <option value="a pe">A pé</option>
+            </select><br>
+            
+            <label>Número de voos domésticos por ano:</label>
+            <input type="number" id="voosDomesticos" required><br>
+            
+            <label>Número de voos internacionais por ano:</label>
+            <input type="number" id="voosInternacionais" required><br>
+            
+            <label>Consumo mensal de energia elétrica (kWh):</label>
+            <input type="number" id="consumoKwh" required><br>
+            
+            <label>Consumo mensal de gás natural (m³):</label>
+            <input type="number" id="consumoGas" required><br>
+            
+            <label>Tipo de dieta:</label>
+            <select id="dieta">
+                <option value="vegana">Vegana</option>
+                <option value="vegetariana">Vegetariana</option>
+                <option value="pouca carne">Pouca carne</option>
+                <option value="muita carne">Muita carne</option>
+            </select><br>
+            
+            <label>Quantidade média mensal de resíduos sólidos (kg):</label>
+            <input type="number" id="quantidadeResiduos" required><br>
+            
+            <!-- Novos campos adicionados -->
+            <label>Quantidade de árvores plantadas:</label>
+            <input type="number" id="arvoresPlantadas" required><br>
+            
+            <label>Consumo de energia renovável (kWh):</label>
+            <input type="number" id="energiaRenovavel" required><br>
+            
+            <button type="button" onclick="calcularCarbono()">Calcular Emissões</button>
+        </form>
+        
+        <div id="resultado" class="result"></div>
+        <div id="dicas" class="tips"></div>
+    </div>
+
+    <footer>
+        <h3>&copy;2024 Calculadora De Carbono</h3>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
