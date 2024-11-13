@@ -57,7 +57,7 @@ footer {
 /* Estilo do título principal */
 h1 {
     text-align: center;
-    color: #205e19; /* Verde escuro */
+    color: #d5ffce; /* Verde escuro */
     font-size: 2em;
     margin-top: 15px;
 }
@@ -67,20 +67,30 @@ h1 {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(240, 249, 244, 0.95); /* Fundo claro e semi-transparente */
+    background-color: #0d3312; /* Fundo claro e semi-transparente */
+    color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px  rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1;
 }
 
 label {
     font-weight: bold;
-    color: #333;
+    color: #e0e0e0;
     display: block;
     font-size: 1.1em;
     margin: 8px 0 4px;
     text-align: left;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: #000000;
+    background-color: #929292;
+    border: 1px solid #929292;
+    border-radius: 5px;
 }
 
 input[type="number"],
@@ -88,7 +98,9 @@ select {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    color: #000000;
+    background-color: #929292;
+    border: 1px solid #929292;
     border-radius: 5px;
 }
 
