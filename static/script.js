@@ -2,11 +2,11 @@ function calcularCarbono() {
     const dados = {
         distancia_km: document.getElementById("distanciaKm").value,
         tipo_transporte: document.getElementById("tipoTransporte").value,
-        voos_domesticos: document.getElementById("voosDomesticos").value,
-        voos_internacionais: document.getElementById("voosInternacionais").value,
+        // voos_domesticos: document.getElementById("voosDomesticos").value,
+        // voos_internacionais: document.getElementById("voosInternacionais").value,
         consumo_kwh: document.getElementById("consumoKwh").value,
         consumo_gas: document.getElementById("consumoGas").value,
-        dieta: document.getElementById("dieta").value,
+        // dieta: document.getElementById("dieta").value,
         quantidade_residuos: document.getElementById("quantidadeResiduos").value,
         arvores_plantadas: document.getElementById("arvoresPlantadas").value,
         energia_renovavel: document.getElementById("energiaRenovavel").value
