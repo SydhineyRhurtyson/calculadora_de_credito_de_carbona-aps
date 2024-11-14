@@ -1,12 +1,10 @@
 function calcularCarbono() {
+    // Coletar os dados da pagina html
     const dados = {
         distancia_km: document.getElementById("distanciaKm").value,
         tipo_transporte: document.getElementById("tipoTransporte").value,
-        // voos_domesticos: document.getElementById("voosDomesticos").value,
-        // voos_internacionais: document.getElementById("voosInternacionais").value,
         consumo_kwh: document.getElementById("consumoKwh").value,
         consumo_gas: document.getElementById("consumoGas").value,
-        // dieta: document.getElementById("dieta").value,
         quantidade_residuos: document.getElementById("quantidadeResiduos").value,
         arvores_plantadas: document.getElementById("arvoresPlantadas").value,
         energia_renovavel: document.getElementById("energiaRenovavel").value
@@ -17,6 +15,7 @@ function calcularCarbono() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dados)
     })
+    // retornar os resultados 
     .then(response => response.json())
     .then(resultado => {
         document.getElementById("resultado").innerHTML = `
